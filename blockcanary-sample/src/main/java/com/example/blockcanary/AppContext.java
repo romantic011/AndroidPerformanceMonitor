@@ -64,6 +64,10 @@ public class AppContext extends BlockCanaryContext {
         return BuildConfig.DEBUG;
     }
 
+    @Override public String providePath() {
+        return "/lylBlockcanary/";
+    }
+
     @Override
     public List<String> concernPackages() {
         List<String> list = super.provideWhiteList();
